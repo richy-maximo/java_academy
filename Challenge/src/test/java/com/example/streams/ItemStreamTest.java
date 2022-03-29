@@ -28,12 +28,12 @@ public class ItemStreamTest {
 
     @Test
     void testFindExpensiveItem() {
-
+        assertEquals(items.get(3), is.findExpensiveItem(items).get());
     }
 
     @Test
     void testFindIdPrime() {
-
+        
     }
 
     @Test
@@ -43,7 +43,7 @@ public class ItemStreamTest {
 
     @Test
     void testFindShortestDescription() {
-
+        assertEquals(items.get(2), is.findShortestDescription(items).get());
     }
 
     @Test
