@@ -1,4 +1,4 @@
-package com.example.patrones;
+package com.example.patrones.builder;
 
 public class RunPizzaBuilder {
 
