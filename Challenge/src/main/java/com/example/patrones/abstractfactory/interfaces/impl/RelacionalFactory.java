@@ -2,19 +2,18 @@ package com.example.patrones.abstractfactory.interfaces.impl;
 
 import com.example.patrones.abstractfactory.interfaces.AbstractFactory;
 import com.example.patrones.abstractfactory.interfaces.AlumnosRepository;
+import com.example.patrones.abstractfactory.interfaces.CursosRepository;
 
 public class RelacionalFactory implements AbstractFactory{
 
     @Override
     public AlumnosRepository createRepositoryAlumnos() {
-        // TODO Auto-generated method stub
-        return null;
+        return new AlumnosRelacionalRepository();
     }
 
     @Override
-    public AlumnosRepository createRepositoryCursos() {
-        // TODO Auto-generated method stub
-        return null;
+    public CursosRepository createRepositoryCursos() {
+        return new CursoRelacionalRepository();
     }
     
 }

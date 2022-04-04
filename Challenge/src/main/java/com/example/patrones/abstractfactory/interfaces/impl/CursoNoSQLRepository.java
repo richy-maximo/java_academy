@@ -1,15 +1,14 @@
 package com.example.patrones.abstractfactory.interfaces.impl;
 
-import java.util.List;
 
 import com.example.patrones.abstractfactory.interfaces.CursosRepository;
 
 public class CursoNoSQLRepository implements CursosRepository{
 
     @Override
-    public List<String> listaCursos() {
-        // TODO Auto-generated method stub
-        return null;
+    public String[] listaCursos() {
+        String[] cursos = {"MongoDB", "Elasticsearch", "Radis"};
+        return cursos;
     }
     
 }
